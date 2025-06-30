@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register - LearnNow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">LearnNow</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course-detail.html">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="login-section">
+    <div class="form-box">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#register">Register here</a></p>
+    </div>
+
+    <div class="form-box" id="register">
+      <h2>Register</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LearnNow. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').onclick = () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>
