@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">LearnNow</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course-detail.html">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 style="color: black;">Grow your skills with online courses</h1>
+    <p style="color: black;">Learn at your own pace with expert instructors.</p>
+    <a href="course-detail.html" style="color:white; background: rgb(44,62,80);" class="btn">Browse Courses</a>
+  </section>
+
+  <section class="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.wVbymUSb5UJZIqR3b64fAQHaHa?w=163&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="HTML CSS Course">
+        <h3><a href="course-detail.html">HTML & CSS Basics</a></h3>
+        <p>Start your web development journey with HTML and CSS.</p>
+      </div>
+      <div class="course-card">
+        <img src="data:image/webp;base64,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" alt="JavaScript Course">
+        <h3><a href="course-detail.html">JavaScript Essentials</a></h3>
+        <p>Master the fundamentals of JavaScript programming.</p>
+      </div>
+      <div class="course-card">
+        <img src="data:image/webp;base64,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" alt="React Course">
+        <h3><a href="course-detail.html">React for Beginners</a></h3>
+        <p>Learn how to build dynamic UIs using React.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LearnNow. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').onclick = () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>

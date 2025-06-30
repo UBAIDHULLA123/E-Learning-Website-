@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Detail - LearnNow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">LearnNow</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course-detail.html">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="course-detail">
+        <img src="https://th.bing.com/th/id/OIP.wVbymUSb5UJZIqR3b64fAQHaHa?w=163&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="HTML CSS Course"  class="course-banner">
+    <h1>HTML & CSS Basics</h1>
+    <p>This beginner-friendly course helps you learn how to build websites using HTML and CSS. You'll cover elements, layout, forms, media, and responsive design.</p>
+    
+    <h3>What you'll learn:</h3>
+    <ul>
+      <li>HTML structure and tags</li>
+      <li>CSS styling and positioning</li>
+      <li>Responsive web design</li>
+      <li>Building real-world layouts</li>
+    </ul>
+
+    <a href="login.html" class="btn">Enroll Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LearnNow. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').onclick = () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    };
+  </script>
+</body>
+</html>
+
